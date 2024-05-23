@@ -1,0 +1,52 @@
+/******************************************
+/* HOT GARBAGE - PLEASE DON'T MIMIC THIS CSS
+/*******************************************/
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1, h2 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  height: 300px;
+  margin: 0 auto;
+}
+
+ul {
+  width: 98px;
+  height: 264px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+  border: 2px solid black;
+}
+
+li {
+  width: 94px;
+  height: 65px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#purple {
+  background: rgba(213, 184, 255, 1);
+}
+
+#green {
+  background: rgba(183, 244, 216, 1);
+}
+
+#blue {
+  background: rgba(0, 181, 204, 1);
+}
+
+#orange {
+  background: rgba(251, 192, 147, 1);
+}
