@@ -1,30 +1,31 @@
 // COLOR CODES
-  // PURPLE rgba(213, 184, 255, 1)
-  // GREEN rgba(183, 244, 216, 1)
-  // BLUE rgba(0, 181, 204, 1)
-  // ORANGE rgba(251, 192, 147, 1)
+  // SEASIDE rgba(232, 214, 203, 1)
+  // TEAK rgba(166, 145, 92, 1)
+  // BLUEMINE rgba(30, 81, 123, 1)
+  // LIGHTWOOD rgba(130, 94, 92, 1)
 
-document.getElementById("purple").onclick = pastelPurple;
-document.getElementById("green").onclick = pastelGreen;
-document.getElementById("blue").onclick = pastelBlue;
-document.getElementById("orange").onclick = pastelOrange;
+document.getElementById("seaside").onclick = makeSeaside;
+document.getElementById("teak").onclick = makeTeak;
+document.getElementById("bluemine").onclick = makeBluemine;
+document.getElementById("lightwood").onclick = makeLightwood;
 
-function pastelPurple() {
-  document.querySelector("body").style.backgroundColor = "rgba(213, 184, 255, 1)";
+function makeSeaside() {
+  document.querySelector("body").style.backgroundColor = "rgba(232, 214, 203, 1)";
   document.querySelector("body").style.color = "white";
 }
 
-function pastelGreen() {
-  document.querySelector("body").style.backgroundColor = "rgba(183, 244, 216, 1)";
+function makeTeak() {
+  document.querySelector("body").style.backgroundColor = "rgba(166, 145, 92, 1)";
   document.querySelector("body").style.color = "white";
 }
 
-function pastelBlue() {
-  document.querySelector("body").style.backgroundColor = "rgba(0, 181, 204, 1)";
+function makeBluemine() {
+  document.querySelector("body").style.background = "rgba(30, 81, 123, 1)";
   document.querySelector("body").style.color = "white";
 }
 
-function pastelOrange() {
-  document.querySelector("body").style.backgroundColor = "rgba(251, 192, 147, 1)";
+function makeLightwood() {
+  document.querySelector("body").style.backgroundColor = "rgba(130, 94, 92, 1)";
   document.querySelector("body").style.color = "white";
 }
+
