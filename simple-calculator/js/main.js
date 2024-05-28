@@ -5,6 +5,7 @@ document.querySelector("#add-three").addEventListener("click", addThree);
 document.querySelector("#add-nine").addEventListener("click", addNine);
 document.querySelector("#sub-two").addEventListener("click", subTwo);
 document.querySelector("#sub-five").addEventListener("click", subFive);
+document.querySelector("#sub-ten").addEventListener("click", subTen);
 
 function makeZero() {
   total = 0;
@@ -28,5 +29,10 @@ function subTwo() {
 
 function subFive() {
   total = total - 5;
+  document.querySelector("#placeToPutResult").innerText = total;
+}
+
+function subTen() {
+  total = total - 10;
   document.querySelector("#placeToPutResult").innerText = total;
 }
