@@ -5,11 +5,22 @@
   box-sizing: border-box;
 }
 
+.hidden {
+  display: none;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
 h1, h2, form {
   text-align: center;
+}
+
+img {
+  display: block;
+  height: 300px;
+  margin: 0 auto;
+  padding-bottom: 25px;
 }
 
 button {

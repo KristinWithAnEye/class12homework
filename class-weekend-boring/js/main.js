@@ -1,13 +1,32 @@
-document.querySelector("#check").addEventListener("click", checkDay);
+const monWed = document.querySelector("#weekday");
+const tuesThurs = document.querySelector("#weekday-two");
+const friday = document.querySelector("#friday");
+const weekend = document.querySelector("#weekend");
 
-function checkDay() {
+document.querySelector("#pick").addEventListener("click", pickOutfit);
+
+function pickOutfit() {
   const day = document.querySelector("#day").value.toLowerCase();
 
-  if (day === "tuesday" || day === "thursday") {
-    document.querySelector("#placeToSee").innerText = "All right, now. It's class day!";
+  if (day === "monday" || day === "wednesday") {
+    monWed.classList.toggle("hidden");
+    tuesThurs.classList.add("hidden");
+    weekend.classList.add("hidden");
+    friday.classList.add("hidden");
+  } else if (day === "tuesday" || day === "thursday") {
+    tuesThurs.classList.toggle("hidden");
+    weekend.classList.add("hidden");
+    friday.classList.add("hidden");
+    monWed.classList.add("hidden");
   } else if (day === "saturday" || day === "sunday") {
-    document.querySelector("#placeToSee").innerText = "Baby, it's the weekend!";
+    weekend.classList.toggle("hidden");
+    friday.classList.add("hidden");
+    monWed.classList.add("hidden");
+    tuesThurs.classList.add("hidden");
   } else {
-    document.querySelector("#placeToSee").innerText = "BORRRRRINNNNGGG!";
+    friday.classList.toggle("hidden");
+    monWed.classList.add("hidden");
+    tuesThurs.classList.add("hidden");
+    weekend.classList.add("hidden");
   }
 }

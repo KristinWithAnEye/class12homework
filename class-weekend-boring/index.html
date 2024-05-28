@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="This app lets you know today is class, the weekend, or a boring day">
-    	<meta name="keywords" content="class, weekend, boring">
+    	<meta charset="UTF-8">
+    	<meta name="description" content="This app decides on an outfit for you depending on the day of the week">
+    	<meta name="keywords" content="outfit, style, dress">
 
-		<title>What is today?</title>
+		<title>What should I wear today?</title>
 
-		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-
 		<h1>What is today?</h1>
+
+		<img src="img/calendar.jpeg" alt="Calendar page with a turquoise and orange background">
 
 		<form>
 			<label for="day">Day of the week: </label>
 			<input id="day" type="text" placeholder="Day of the week">
 		</form>
 
-		<button id="check" type="button" name="button">Check</button>
+		<button id="pick" type="button" name="button">Pick Your Outfit</button>
 
-		<h2 id="placeToSee"></h2>
-
+		<section>
+			<img id="weekday" class="hidden" src="img/weekday.jpeg" alt="Woman dressed in blazer and ripped jeans with tennis shoes">
+			<img id="weekday-two" class="hidden" src="img/weekday-two.jpeg" alt="Woman dressed in black top with checkered pants">
+			<img id="friday" class="hidden" src="img/friday.jpeg" alt="Woman dressed in black leather crop top and pants">
+			<img id="weekend" class="hidden" src="img/weekend.jpeg" alt="Woman dressed in black leather jacket and jeans with tennis shoes">
+		</section>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
